@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Website Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            screen: {
+                sm: '320px',
+                lg: '1080px',
+            },
+
+            plugins: [
+                require("@tailwindcss/forms")({
+                    strategy: 'base',
+                    strategy: 'class',
+                }),
+            ],
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <nav class="container sticky top-0 bg-white max-w-sm mx-auto lg:max-w-full lg:flex lg:flex-wrap justify-end lg:space-x-4 lg:top-0 lg:bg-white">
+        <a href="#home" class="font-bold px-3 py-2 text-slate-700 hover:bg-purple-500 hover:text-white">Home</a>
+        <a href="#profil" class="font-bold px-3 py-2 text-slate-700 hover:bg-purple-500 hover:text-white">Profil</a>
+        <a href="#experiences" class="font-bold px-3 py-2 text-slate-700 hover:bg-purple-500 hover:text-white">Experiences</a>
+        <a href="#abilities" class="font-bold px-3 py-2 text-slate-700 hover:bg-purple-500 hover:text-white">Abilities</a>
+    </nav>
+
+    <header id="home" class="container flex flex-wrap-reverse justify-center bg-purple-500 max-w-sm mx-auto px-6 py-10 lg:max-w-full lg:flex lg:flex-wrap-reverse lg:justify-center lg:gap-x-10 lg:bg-purple-500 lg:h-screen lg:items-center">
+        <div>
+            <h2 class="text-[25px] lg:text-[35px] text-white text-center">Hello & Wellcome</h2>
+            <h1 class="text-[30px] lg:text-[55px] text-white text-center font-bold">I'm Fitwatul Khoiriyah</h1><hr>
+            <h3 class="text-[20px] lg:text-[25px] text-white text-center">Student Majoring in Informatics</h3>
+        </div>
+        <div><img class="rounded-full h-[150px] lg:h-72" src="assets/image.png"></div><br>
+    </header>
+
+    <main>
+
+        <section id="profil" class="container max-w-sm mx-auto px-6 py-10 lg:max-w-full lg:grid lg:grid-cols-4 lg:gap-x-20 lg:h-screen lg:pt-17 lg:pb-17">
+            <div class="mb-3 lg:col-start-2 lg:col-span-2 lg:mb-0">
+                <h2 class="text-[25px] text-center text-purple-700 lg:text-[40px]">Profil</h2>
+                <hr class="border-t-3 border-t-fuchsia-700 mt-3">
+            </div>
+            <div class="mb-3 lg:mb-10 lg:col-start-2">
+                <h3 class="text-[20px] text-center text-purple-600 lg:mb-5">About me</h3>
+                <p>Nama saya Fitwatul Khoiriyah. Teman-teman biasa memanggil saya Khoir.
+                    Saya anak ketiga dari tiga bersaudara. 
+                    Agama saya adalah Islam begitu juga dengan orang tua dan saudara saya.</p>
+                <p>Saat ini saya sedang menempuh pendidikan sebagai mahasiswa semester 7, 
+                    Fakultas Teknik Program Studi Informatika Universitas Nurul Jadid.</p>
+                <p>Saya memiliki beberapa hobi seperti menonton, mendengarkan musik, dan membaca.</p>
+            </div>
+            <div class="lg:col-start-3">
+                <h3 class="text-[20px] text-center text-purple-600 lg:mb-5">Details</h3>
+                <div class="text-[15px]">
+                    <p class="font-semibold mt-2">Nama: </p>
+                    <p>Fitwatul Khoiriyah</p><br>
+                    <p class="font-semibold">Umur: </p>
+                    <p>21 tahun</p><br>
+                    <p class="font-semibold">Tempat Tinggal: </p>
+                    <p>Probolinggo, Jawa Timur, Indonesia</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="container max-w-sm mx-auto bg-purple-200 px-6 py-10 lg:max-w-full lg:grid lg:grid-cols-4 lg:justify-center lg:gap-y-15 lg:h-fit lg:pt-17 pb-17">
+            <div class="mb-3 lg:col-start-2 lg:col-span-2">
+                <h2 class="text-[25px] lg:text-[40px] text-center text-purple-700">Experiences</h2>
+                    <p class="text-[18px] lg:text-[20px] text-center">"Ing ngarsa sung tuladha,
+                        Ing madya mangun karsa,
+                        Tut wuri handayani."</p>
+                    <p class="text-center">- Ki Hajar Dewantara</p>
+                    <hr class="border-t-3 border-t-fuchsia-700 mt-3">
+            </div>
+
+            <div class="lg:col-start-2 lg:col-span-2"><h3 class="text-[20px] text-purple-600 mb-3">Educations</h3></div>
+
+            <div class="mb-3 lg:mb-10 lg:col-start-2">
+                <h4 class="font-bold">Universitas Nurul Jadid</h4>
+                <p>2020 - Sekarang</p>
+            </div>
+            
+            <div class="lg:col-start-3">
+                <h4 class="font-semibold">Informatics Study Program</h4>
+                <p>Program Studi Informatika berkonsentrasi dalam menghasilkan 
+                        sarjana yang menguasai penggunaan piranti lunak (software) 
+                        yang diarahkan melalui kompetensi Basis Data (Database), 
+                        Jaringan Komputer (Computer Network), 
+                        dan Kecerdasan Buatan (Artificial Intelegence) termasuk penguasaan multimedia.
+                </p>
+                <br>
+            </div>
+
+            <div class="mb-3 lg:col-start-2">
+                <h4 class="font-bold">SMK Negeri 1 Kraksaan</h4>
+                <p>2017 - 2020</p>
+            </div>
+                
+            <div class="lg:col-start-3">
+                <h4 class="font-semibold">Accounting Major</h4>
+                <p>Jurusan akuntansi merupakan bidang studi yang mempelajari tentang 
+                    metode pencatatan serta penyusunan laporan keuangan 
+                    untuk membantu pemangku kepentingan di dalam pengambilan keputusan. 
+                    Jurusan akuntansi adalah jurusan yang dekat sekali dengan angka, 
+                    terutama semua yang terkait keuangan.
+                </p>
+            </div>
+        </section>
+
+        <section id="abilities" class="container max-w-sm mx-auto px-6 py-10 lg:max-w-full lg:grid lg:grid-cols-4 lg:gap-x-20 lg:gap-y-15 lg:h-fit lg:pt-20 pb-20">
+                <div class="mb-3 lg:col-start-2 lg:col-span-2">
+                    <h2 class="text-[25px] lg:text-[40px] text-center text-purple-700">Abilities</h2>
+                    <hr class="border-t-3 border-t-fuchsia-700 mt-3">
+                </div>
+                <div class="mb-3 lg:col-start-2 lg:justify-self-center">
+                    <h3 class="text-[20px] text-purple-600">Skill</h3>
+                    <ul class="list-disc text-[15px]">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="lg:col-start-3 lg:justify-self-center">
+                    <h3 class="text-[20px] text-purple-600">Tools</h3>
+                    <ul class="list-disc text-[15px]">
+                        <li>Windows</li>
+                        <li>MS Office</li>
+                        <li>Sublime Text</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="container  flex flex-wrap bg-purple-500 h-full gap-10 justify-between max-w-sm mx-auto px-6 py-2 lg:max-w-full lg:px-8 ">
+        <div class="text-white">Author: Fitwatul Khoiriyah</div>
+        <div class="text-white hover:text-purple-900"><a href="https://github.com/FKhoiriyah">GitHub</a></div>
+    </footer>
+</body>
+
+</html>
